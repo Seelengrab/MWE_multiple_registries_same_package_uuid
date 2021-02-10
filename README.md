@@ -28,14 +28,3 @@ julia> Pkg.Registry.add(Pkg.RegistrySpec(path = "registry2_copy"))
 
 julia> Pkg.add(Pkg.PackageSpec(name = "Example", uuid = "7876af07-990d-54b4-ab0e-23690620f79a"))
 ```
-
----
-
-## Note
-
-Instead of doing `export JULIA_DEPOT_PATH=$(mktemp -d)`, you could instead do this in `bash`:
-```bash
-rm -rf ~/.julia
-```
-
-But most people will probably prefer to do `export JULIA_DEPOT_PATH=$(mktemp -d)`.
