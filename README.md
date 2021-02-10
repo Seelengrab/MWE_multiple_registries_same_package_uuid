@@ -10,6 +10,8 @@ export JULIA_DEPOT_PATH=$(mktemp -d)
 Open Julia and run the following lines:
 
 ```julia
+julia> Base.DEPOT_PATH
+
 julia> import Pkg
 
 julia> rm("registry1_copy"; force = true, recursive = true)
